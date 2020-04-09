@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Email Visualization by Fusie</title>
+    <link rel="stylesheet" href="./static/lib/css//bootstrap.min.css">
+    <link rel="stylesheet" href="./static/css/custom.css">
+    <link rel="stylesheet" href="./static/css/dashboard.css">
+    <script src="./static/lib/js/jquery.js"></script>
+    <script src="./static/lib/js/jquery-ui.js"></script>
+</head>
+
+<body class="application">
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand">Analysing E-mail mailboxes using Visualization</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="inner-div">
+                    <h2>Welcome,</h2>
+                    <p> this tool is developed during a Bachelor Thesis in 2015
+                    at the Chair of Computer Science 1 of the
+                    Friedrich-Alexander University Erlangen-Nuernberg. It
+                    allows the forensic examiners the investigate serveral
+                    mailbox files (including MBOX, PST and OST) at one time and
+                    to extract interesting patterns and clues of a
+                    conversation.
+                    </p>
+                    <p>To offer you a productive environment the tool is
+                    separated into two pandels:
+                        <ul>
+                            <li>The left one displays several charts and
+                                diagramm in order to give you a quick overview
+                                of the number of E-mail in those accounts. It
+                                includes bar, row, and pie charts.</li>
+                            <li>On the right the centerpiece of the tool is
+                                provided by spanning a forced graph to
+                                visualize the whole communication of those
+                                accounts. With the help of that graph you are
+                                able to explore the present communication</li>
+                        </ul>
+                    </p>
+                    <p>By clicking on the "Start" button you are directed to
+                    the investigation panel and you are able to begin with the
+                    analysing.</p>
+                    <div id="content">
+                        <form method="post" action="{{ url_for('investigation')}}">
+                            <input type="hidden" name="from_date" class="from_date" data-date-format="yyyy-mm-dd" placeholder="Select start date" contenteditable="false">
+                            <input type="hidden" name="to_date" class="to_date" data-date-format="yyyy-mm-dd" placeholder="Select end date" contenteditable="false">
+                            <button type="submit" class="btn btn-default">Get started!</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <hr>
+            <a href="https://www.fau.de"><img width="100" height="auto" src="/static/images/fau-logo.png">
+            </a>
+            <a href="https://www1.cs.fau.de"><img align="right" src="/static/images/i1-logo.png" width="100" height="auto">
+            </a>
+        </footer>
+        <script src='./static/js/date.js' type='text/javascript'></script>
+
+
+</body>
+
+</html>

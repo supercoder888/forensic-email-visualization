@@ -1,0 +1,325 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 98%;
+  /* Set the fixed height of the footer here */
+  background-color: #f5f5f5;
+}
+
+#mail_contents {
+    display:none;
+}
+
+#time-control svg g g.axis.y { display: none; }
+
+
+#wrapper {
+    width:1000px;
+    margin:0 auto;
+}
+
+#numberOfEmails {
+    font-size: 50px;
+}
+
+.dc-chart g.row text {
+    fill: black;
+    font-size: 12px;
+}
+
+#chart {
+    font-size: 12px;
+}
+
+#LeftPanel
+{
+    width: 40%;
+    float: left;
+}
+#RightPanel
+{
+    width: 60%;
+    height: 100%;
+    float: right;
+}
+fieldset{
+    border: 0 none;
+    fill: black;
+}
+.link {
+    stroke: #555;
+    stroke-opacity: .3;
+}
+
+
+.node {
+  fill: #0080ff;
+  stroke-width: 1.5px;
+}
+
+.selected {
+    fill: black !important;
+    stroke-width: 2.5px;
+    stroke: black;
+}
+
+text {
+  fill: #000;
+  font: 10px sans-serif;
+  pointer-events: none;
+}
+
+.inner-div
+{
+  margin: 0 auto 0 auto;
+  margin-top: 60px;
+  width: 40%;
+  box-shadow: 2px 2px 5px #888888;
+  background-color: #ffffff;
+  border-radius: 3px;
+  padding: 0px 10px 5px 10px;
+  border-style                :   solid;
+  border-width                :   2px;
+  border-color                :   #3d4a57;
+  -webkit-border-radius       :   3px;
+  -moz-border-radius          :   3px;
+}
+
+div#pop-up {
+    display: none;
+    position:absolute;
+    color: white;
+    font-size: 14px;
+    background: rgba(0,0,0,0.5);
+    padding: 5px 10px 5px 10px;
+    -moz-border-radius: 8px 8px;
+}
+div#pop-up-title {
+    font-size: 15px;
+    width:200px;
+    margin-bottom: 4px;
+    font-weight: bolder;
+}
+div#pop-up-content {
+    font-size: 12px;
+}
+div#pop-desc {
+    width: 200px;
+}
+div#pop-img {
+    font-size: 30px;
+    font-weight: bolder;
+}
+div#sus-up {
+    display: none;
+    position:absolute;
+    color: white;
+    font-size: 14px;
+    background: rgba(100,0,0,0.5);
+    padding: 5px 10px 5px 10px;
+    -moz-border-radius: 8px 8px;
+    border-radius: 8px 8px;
+}
+div#sus-up-title {
+    font-size: 15px;
+    width:200px;
+    margin-bottom: 4px;
+    font-weight: bolder;
+}
+div#sus-up-content {
+    font-size: 12px;
+}
+div#sus-desc {
+    width: 200px;
+}
+div#sus-img {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+aside {
+    width: 320px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, .9);
+    border-right: 1px solid #ececec;
+    padding: 2em 1.5em;
+    -webkit-transition: left .15s ease;
+    transition: left .15s ease;
+    z-index: 100;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch
+}
+.sidebar-wrapper {
+    height: 100%;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch
+}
+.info {
+    margin: 0 0 2em
+}
+.info img {
+    width: 120px;
+    height: 120px;
+    margin-right: .7em;
+    vertical-align: bottom
+}
+.info h2 {
+    margin: 0 0 .5em
+}
+.info p {
+    display: inline-block;
+    margin: 1em 0 .5em
+}
+.list-wrapper {
+    position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch
+}
+.list {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    overflow: auto
+}
+.list:after {
+    content: '\a';
+    white-space: pre;
+    display: inline-block;
+    height: 1.6em
+}
+.list p {
+    margin: 0 0 .3em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+text {
+    font-size: .8em;
+    pointer-events: none
+}
+text.shadow {
+    stroke: #fff;
+    stroke-width: 2.5px;
+    opacity: .9
+}
+
+
+.dragging circle {
+    stroke-width: 2.5px
+}
+
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.modalDialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+
+.modalDialog > div {
+    width: 500px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    background: #fff;
+}
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+.modalDialog .modalContent {    padding: 0px 20px 5px 10px; }
+.close:hover { background: #6b0000; }
